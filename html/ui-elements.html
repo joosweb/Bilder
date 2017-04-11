@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+
+    <title>Highland: UI Elements</title>
+
+    <!-- CSS Plugins -->
+    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" >
+
+    <!-- CSS Global -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body>
+
+    <!-- NAVIGATION
+    ================================================== -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_main" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="index.html">Highland</a>
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar_main">
+
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="edit-profile.html">Edit Profile</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+                <li><a href="inbox-dialog.html">Inbox: Dialog</a></li>
+                <li><a href="sign-in.html">Sign In</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog-timeline.html">Blog: Timeline</a></li>
+                <li><a href="blog-post.html">Blog Post</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="gallery-text.html">Gallery: Text blocks</a></li>
+                <li><a href="gallery-bubbles.html">Gallery: Bubbles</a></li>
+                <li><a href="gallery-item.html">Gallery Item</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Pages <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="404.html">Error 404</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+              </ul>
+            </li>
+            <li><a href="ui-elements.html">UI elements</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="sign-in.html"><i class="fa fa-lock"></i> <span class="hidden-md">Sign In</span></a>
+            </li>
+            <li>
+              <a href="sign-up.html"><i class="fa fa-user"></i> <span class="hidden-md">Sign Up</span></a>
+            </li>
+          </ul>
+
+          <form class="navbar-form navbar-search navbar-right">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="&#xF002; &nbsp; Search">
+            </div>
+            <button type="submit" class="btn btn-default">
+              <i class="fa fa-search"></i> Search
+            </button>
+          </form>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <!-- Header -->
+    <div class="page-topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+
+            <h3>UI Elements</h3>
+            
+          </div>
+          <div class="col-sm-8 hidden-xs">
+            
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li class="active">UI Elements</li>
+            </ol>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </div>
+
+
+    <!-- CONTENT
+    ================================================== -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+
+          <div class="panel panel-default" id="ui-categories">
+
+            <!-- Default panel contents -->
+            <div class="panel-heading">Categories</div>
+
+            <!-- List group -->
+            <div class="panel-body">
+              <div class="list-group">
+                <a href="#typography" class="list-group-item">Typography</a>
+                <a href="#buttons" class="list-group-item">Buttons</a>
+                <a href="#navs" class="list-group-item">Navs</a>
+                <a href="#pagination" class="list-group-item">Pagination</a>
+                <a href="#panels" class="list-group-item">Panels</a>
+                <a href="#social-icons" class="list-group-item">Social Icons</a>
+                <a href="#block-header" class="list-group-item">Block Header</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-sm-8">
+          
+          <!-- Typography -->
+          <div class="page-header">
+            <h3 id="typography">Typography</h3>
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-8">
+              <p class="lead">
+                Phasellus a sem et augue ullamcorper gravida. Maecenas sed porta orci. Aliquam interdum felis sapien, vitae viverra diam consectetur a. Sed interdum quam leo, sed pretium eros mattis vitae.
+              </p>
+              <p>
+                Phasellus a sem et augue ullamcorper gravida. Maecenas sed porta orci. Aliquam interdum felis sapien, vitae viverra diam consectetur a. Sed interdum quam leo, sed pretium eros mattis vitae.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <h6>Header 6</h6>
+              <h5>Header 5</h5>
+              <h4>Header 4</h4>
+              <h3>Header 3</h3>
+              <h2>Header 2</h2>
+              <h1>Header 1</h1>
+            </div>
+
+          </div> <!-- / .row -->
+
+
+          <!-- Buttons -->
+          <div class="page-header">
+            <h3 id="buttons">Buttons</h3>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+
+              <div class="ui-buttons">
+                <p>
+                  <a class="btn btn-lg btn-default">Large Button</a> 
+                  <a class="btn btn-lg btn-primary">Large Button</a> 
+                </p>
+                <p>
+                  <a class="btn btn-default">Large Button</a> 
+                  <a class="btn btn-primary">Large Button</a> 
+                </p>
+                <p>
+                  <a class="btn btn-sm btn-default">Large Button</a> 
+                  <a class="btn btn-sm btn-primary">Large Button</a> 
+                </p>
+                <p>
+                  <a class="btn btn-xs btn-default">Large Button</a> 
+                  <a class="btn btn-xs btn-primary">Large Button</a> 
+                </p>
+              </div>
+
+            </div>
+            <div class="col-sm-12">
+
+              <div class="well">
+                <code>
+                  &lt;a href=&quot;#&quot; class=&quot;btn btn-default&quot;&gt;Default Button&lt;/a&gt;
+                </code> <br />
+                <code>
+                  &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Primary Button&lt;/a&gt;
+                </code> <br />
+              </div>
+
+            </div>
+          </div> <!-- / .row -->
+
+
+          <!-- Navs -->
+          <div class="page-header">
+            <h3 id="navs">Navs</h3>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+
+              <h4>Tabs</h4>
+              <hr>
+              
+              <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Messages</a></li>
+              </ul>
+
+            </div>
+            <div class="col-sm-6">
+
+              <h4>Pills</h4>
+              <hr>
+
+              <ul class="nav nav-pills nav-justified">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Messages</a></li>
+              </ul>
+
+            </div>
+            <div class="col-sm-12">
+              <br /><br />
+              
+              <div class="well">
+                <code>
+                  &lt;ul class=&quot;nav nav-tabs&quot;&gt;<br/>  &nbsp;&nbsp;&nbsp;&nbsp;&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>  &nbsp;&nbsp;&nbsp;&nbsp;&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;<br/>  &nbsp;&nbsp;&nbsp;&nbsp;&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;<br/>&lt;/ul&gt;
+                </code>
+              </div>
+              <div class="well">
+                <code>
+                  &lt;ul class=&quot;nav nav-pills&quot;&gt;<br/>  &nbsp;&nbsp;&nbsp;&nbsp;&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>  &nbsp;&nbsp;&nbsp;&nbsp;&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;<br/>  &nbsp;&nbsp;&nbsp;&nbsp;&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;<br/>&lt;/ul&gt;
+                </code>
+              </div>
+
+            </div>
+          </div> <!-- / .row -->
+
+
+          <!-- Pagination -->
+          <div class="page-header">
+            <h3 id="pagination">Pagination</h3>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-8">
+
+              <h4>Pagination</h4>
+              <hr>
+
+              <!-- Pagination Large -->
+              <div class="pagination-example">
+                <ul class="pagination pagination-lg">
+                  <li>
+                    <a href="#"><i class="fa fa-angle-left"></i> Prev</a>
+                  </li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li>
+                    <a href="#">Next <i class="fa fa-angle-right"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Pagination Default -->
+              <div class="pagination-example">
+                <ul class="pagination">
+                  <li><a href="#"><i class="fa fa-angle-left"></i> Prev</a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">Next <i class="fa fa-angle-right"></i></a></li>
+                </ul>
+              </div>
+              <!-- Pagination Small -->
+              <div class="pagination-example">
+                <ul class="pagination pagination-sm">
+                  <li><a href="#"><i class="fa fa-angle-left"></i> Prev</a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">Next <i class="fa fa-angle-right"></i></a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="col-sm-12 col-md-8">
+
+              <h4>Pager</h4>
+              <hr>
+
+              <nav>
+                <ul class="pager">
+                  <li class="previous disabled"><a href="#"><span aria-hidden="true">←</span> Older</a></li>
+                  <li class="next"><a href="#">Newer <span aria-hidden="true">→</span></a></li>
+                </ul>
+              </nav>
+              <nav>
+                <ul class="pager">
+                  <li><a href="#">Previous</a></li>
+                  <li><a href="#">Next</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-sm-12">
+              
+              <div class="well">
+                <code>
+                  &lt;nav&gt;<br/>  &nbsp;&nbsp;&lt;ul class=&quot;pagination&quot;&gt;<br/>    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br/>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;<br/>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt;<br/>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br/>    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;<br/>    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;<br/>    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;<br/>    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;<br/>    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;<br/>    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br/>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;<br/>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt;<br/>      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br/>    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>  &nbsp;&nbsp;&lt;/ul&gt;<br/>&lt;/nav&gt;
+                </code>
+              </div>
+
+            </div>
+          </div> <!-- / .row -->
+
+
+          <!-- Panels -->
+          <div class="page-header">
+            <h3 id="panels">Panels</h3>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+
+              <!-- Panel default -->
+              <div class="panel panel-default">
+                <div class="panel-heading">Panel default</div>
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt soluta, eveniet placeat maiores commodi perspiciatis animi ad.
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+
+              <!-- Panel Primary -->
+              <div class="panel panel-primary">
+                <div class="panel-heading">Panel Primary</div>
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ut excepturi voluptatum dolor blanditiis ab accusantium adipisci quia.
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+
+              <!-- Panel Secondary -->
+              <div class="panel panel-gray">
+                <div class="panel-heading">Panel Gray</div>
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolor atque vel architecto, vitae ipsa repellat quidem nulla mi.
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              
+              <div class="well">
+                <code>
+                  &lt;div class=&quot;panel panel-default&quot;&gt;<br/>  &nbsp;&nbsp;&nbsp;&lt;div class=&quot;panel-heading&quot;&gt;Panel Heading&lt;/div&gt;<br/>  &nbsp;&nbsp;&nbsp;&lt;div class=&quot;panel-body&quot;&gt;<br/>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Panel content<br/>  &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>&nbsp;&lt;/div&gt;
+                </code>
+              </div>
+
+            </div>
+          </div> <!-- / .row -->
+
+
+          <!-- Social icons -->
+          <div class="page-header">
+            <h3 id="social-icons">Social Icons</h3>
+          </div>
+
+          <ul class="social-icons">
+            <li class="facebook">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="twitter">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="google-plus">
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </li>
+            <li class="youtube">
+              <a href="#"><i class="fa fa-youtube"></i></a>
+            </li>
+            <li class="linkedin">
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li class="instagram">
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li class="whatsapp">
+              <a href="#"><i class="fa fa-whatsapp"></i></a>
+            </li>
+            <li class="pinterest">
+              <a href="#"><i class="fa fa-pinterest"></i></a>
+            </li>
+            <li class="vine">
+              <a href="#"><i class="fa fa-vine"></i></a>
+            </li>
+            <li class="dropbox">
+              <a href="#"><i class="fa fa-dropbox"></i></a>
+            </li>
+            <li class="flickr">
+              <a href="#"><i class="fa fa-flickr"></i></a>
+            </li>
+            <li class="dropbox">
+              <a href="#"><i class="fa fa-dropbox"></i></a>
+            </li>
+            <li class="vk">
+              <a href="#"><i class="fa fa-vk"></i></a>
+            </li>
+            <li class="vimeo">
+              <a href="#"><i class="fa fa-vimeo"></i></a>
+            </li>
+            <li class="foursquare">
+              <a href="#"><i class="fa fa-foursquare"></i></a>
+            </li>
+            <li class="spotify">
+              <a href="#"><i class="fa fa-spotify"></i></a>
+            </li>
+            <li class="behance">
+              <a href="#"><i class="fa fa-behance"></i></a>
+            </li>
+            <li class="rss">
+              <a href="#"><i class="fa fa-rss"></i></a>
+            </li>
+            <li class="github">
+              <a href="#"><i class="fa fa-github"></i></a>
+            </li>
+          </ul>
+
+          <ul class="social-icons social-icons_sm">
+            <li class="facebook">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="twitter">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="google-plus">
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </li>
+            <li class="youtube">
+              <a href="#"><i class="fa fa-youtube"></i></a>
+            </li>
+            <li class="linkedin">
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li class="instagram">
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li class="whatsapp">
+              <a href="#"><i class="fa fa-whatsapp"></i></a>
+            </li>
+            <li class="pinterest">
+              <a href="#"><i class="fa fa-pinterest"></i></a>
+            </li>
+            <li class="vine">
+              <a href="#"><i class="fa fa-vine"></i></a>
+            </li>
+            <li class="dropbox">
+              <a href="#"><i class="fa fa-dropbox"></i></a>
+            </li>
+            <li class="flickr">
+              <a href="#"><i class="fa fa-flickr"></i></a>
+            </li>
+            <li class="dropbox">
+              <a href="#"><i class="fa fa-dropbox"></i></a>
+            </li>
+            <li class="vk">
+              <a href="#"><i class="fa fa-vk"></i></a>
+            </li>
+            <li class="vimeo">
+              <a href="#"><i class="fa fa-vimeo"></i></a>
+            </li>
+            <li class="foursquare">
+              <a href="#"><i class="fa fa-foursquare"></i></a>
+            </li>
+            <li class="spotify">
+              <a href="#"><i class="fa fa-spotify"></i></a>
+            </li>
+            <li class="behance">
+              <a href="#"><i class="fa fa-behance"></i></a>
+            </li>
+            <li class="rss">
+              <a href="#"><i class="fa fa-rss"></i></a>
+            </li>
+            <li class="github">
+              <a href="#"><i class="fa fa-github"></i></a>
+            </li>
+          </ul>
+
+          <div class="well">
+            <code>
+              &lt;ul class=&quot;social-icons&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&lt;li class=&quot;facebook&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br/>&nbsp;&nbsp;&nbsp;&lt;li class=&quot;twitter&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br/>&nbsp;&nbsp;&nbsp;&lt;li class=&quot;google-plus&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br/>&nbsp;&lt;/ul&gt;
+            </code>
+          </div>
+
+          <div class="well">
+            <code>
+              &lt;ul class=&quot;social-icons social-icons_sm&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&lt;li class=&quot;facebook&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br/>&nbsp;&nbsp;&nbsp;&lt;li class=&quot;twitter&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br/>&nbsp;&nbsp;&nbsp;&lt;li class=&quot;google-plus&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br/>&nbsp;&lt;/ul&gt;
+            </code>
+          </div>
+
+
+          <!-- Block Header -->
+          <div class="page-header">
+            <h3 id="block-header">Block Header</h3>
+          </div>
+
+          <h2 class="block-header">
+            <span>Block Header</span>
+          </h2>
+
+          <h2 class="block-header alt">
+            <span>Block Header Alt</span>
+          </h2>
+
+          <div class="well">
+            <code>
+              &lt;h2 class=&quot;block-header&quot;&gt;<br/>&nbsp;&nbsp;&lt;span&gt;Block Header&lt;/span&gt;<br/>&lt;/h2&gt;
+            </code>
+          </div>
+          <div class="well">
+            <code>
+              &lt;h2 class=&quot;block-header alt&quot;&gt;<br/>&nbsp;&nbsp;&lt;span&gt;Block Header Alt&lt;/span&gt;<br/>&lt;/h2&gt;
+            </code>
+          </div>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+
+
+    <!-- FOOTER 
+    ================================================== -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            
+            <div class="footer__col">
+              <h3 class="footer__header">Our Company</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, corrupti debitis!
+              </p>
+              <p>
+                US & CAN: 1-234-56789 <br />
+                Worldwide: 1-234-56789
+              </p>
+              <ul class="footer__social">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+              </ul>
+            </div>
+
+          </div>          
+          <div class="col-xs-6 col-sm-2">
+            
+            <div class="footer__col">
+              <h3 class="footer__header">
+                Learn More
+              </h3>
+              <ul class="footer__content">
+                <li><a href="#">How it works?</a></li>
+                <li><a href="#">Meeting Tools</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-xs-6 col-sm-2">
+            
+            <div class="footer__col">
+              <h3 class="footer__header">
+                About Us
+              </h3>
+              <ul class="footer__content">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            
+            <div class="footer__col">
+              <h3 class="footer__header">Subscribe</h3>
+              <p>
+                Enter your e-mail below to subscribe to our free newsletter.
+              </p>
+              <p>
+                No spam. We promise.
+              </p>
+              <form class="form-inline footer__form">
+                <div class="form-group">
+                  <label class="sr-only">Enter e-mail</label>
+                  <input type="email" class="form-control" placeholder="Enter your e-mail">
+                </div>
+                <button type="submit" class="btn btn-default">
+                  OK
+                </button>
+              </form>
+            </div>
+
+          </div>
+
+        </div> <!-- / .row -->
+
+        <hr class="footer__hr" />
+
+        <div class="row">
+          <div class="col-sm-6">
+            
+            <p>
+              Company 2016. All rights reserved.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+
+      </div> <!-- / .container -->
+    </footer>
+
+
+    <!-- JavaScript
+    ================================================== -->
+    
+    <!-- JS Global -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- JS Plugins -->
+    <script src="assets/plugins/scrolltopcontrol/scrolltopcontrol.js"></script>
+    
+    <!-- JS Custom -->
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>

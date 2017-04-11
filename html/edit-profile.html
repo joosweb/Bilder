@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+
+    <title>Highland: Edit profile</title>
+
+    <!-- CSS Plugins -->
+    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" >
+
+    <!-- CSS Global -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body>
+
+    <!-- NAVIGATION
+    ================================================== -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_main" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="index.html">Highland</a>
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar_main">
+
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="edit-profile.html">Edit Profile</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+                <li><a href="inbox-dialog.html">Inbox: Dialog</a></li>
+                <li><a href="sign-in.html">Sign In</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog-timeline.html">Blog: Timeline</a></li>
+                <li><a href="blog-post.html">Blog Post</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="gallery-text.html">Gallery: Text blocks</a></li>
+                <li><a href="gallery-bubbles.html">Gallery: Bubbles</a></li>
+                <li><a href="gallery-item.html">Gallery Item</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Pages <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="404.html">Error 404</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+              </ul>
+            </li>
+            <li><a href="ui-elements.html">UI elements</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="sign-in.html"><i class="fa fa-lock"></i> <span class="hidden-md">Sign In</span></a>
+            </li>
+            <li>
+              <a href="sign-up.html"><i class="fa fa-user"></i> <span class="hidden-md">Sign Up</span></a>
+            </li>
+          </ul>
+
+          <form class="navbar-form navbar-search navbar-right">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="&#xF002; &nbsp; Search">
+            </div>
+            <button type="submit" class="btn btn-default">
+              <i class="fa fa-search"></i> Search
+            </button>
+          </form>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <!-- Header -->
+    <div class="page-topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+
+            <h3>Edit profile</h3>
+            
+          </div>
+          <div class="col-sm-8 hidden-xs">
+            
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Profile</a></li>
+              <li class="active">Edit profile</li>
+            </ol>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </div>
+
+
+    <!-- CONTENT
+    ================================================== -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="profile__aside">
+          
+            <div class="profile__img">
+              <img src="assets/img/person_1.jpg" class="img-responsive" alt="...">
+            </div>
+
+            <h4 class="profile__name">John Doe <small>Administrator</small></h4>
+
+            <ul class="social-icons social-icons_sm">
+              <li class="facebook">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li class="twitter">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li class="google-plus">
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </li>
+            </ul>
+
+            <hr />
+
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#profile__message">
+              <i class="fa fa-envelope-o"></i> Send message
+            </a>
+
+          </div> <!-- / .profile__aside -->
+        </div>
+        <div class="col-sm-9">
+          
+          <!-- Profile nav -->
+          <nav class="clearfix">
+            <ul class="profile__nav">
+              <li>
+                <a href="profile.html">
+                  <i class="fa fa-user"></i> Profile
+                </a>
+              </li>
+              <li class="active">
+                <a href="edit-profile.html">
+                  <i class="fa fa-edit"></i> Edit
+                </a>
+              </li>
+              <li>
+                <a href="inbox.html">
+                  <i class="fa fa-envelope-o"></i> Inbox
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-sign-out"></i> Sign out
+                </a>
+              </li>
+            </ul>
+          </nav>
+            
+          <div class="profile__body">
+
+            <h1 class="block-header alt">
+              <span>Edit profile</span>
+            </h1>
+
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ex illo totam. Magnam atque quidem ipsum. Nihil reiciendis sit temporibus eius. Beatae doloribus sapiente earum iusto hic labore porro facilis.
+            </p><br>
+
+            <form>
+
+              <div class="form-group">
+                <label class="sr-only">Full name</label>
+                <input type="text" class="form-control input-lg" placeholder="Full name">
+              </div>
+
+              <div class="form-group">
+                <label class="sr-only">Email address</label>
+                <input type="email" class="form-control input-lg" placeholder="Email address">
+              </div>
+
+              <div class="form-group">
+                <label class="sr-only">Password</label>
+                <input type="password" class="form-control input-lg" placeholder="Password">
+              </div>
+
+              <div class="form-group">
+                <label class="sr-only">Select country</label>
+                <select class="form-control input-lg">
+                  <option>Select country</option>
+                  <option>Australia</option>
+                  <option>Belgium</option>
+                  <option>Canada</option>
+                  <option>Denmark</option>
+                  <option>England</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="sr-only">Company</label>
+                <input type="text" class="form-control input-lg" placeholder="Company">
+              </div>
+
+              <div class="form-group">
+                <label class="sr-only">Position</label>
+                <input type="text" class="form-control input-lg" placeholder="Position">
+              </div>
+
+              <div class="checkbox"><br>
+                <input type="checkbox" id="profile-form__notifications" value="">
+                <label for="profile-form__notifications">
+                  I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                </label>
+              </div><br>
+              
+              <button type="submit" class="btn btn-primary">
+                Save changes
+              </button>
+
+            </form>
+
+          </div> <!-- / .profile__body -->
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+
+
+    <!-- MESSAGE
+    ================================================== -->
+    <div class="modal fade" id="profile__message" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">New message</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label class="sr-only">Subject</label>
+                <input type="text" class="form-control" placeholder="Subject">
+              </div>
+              <div class="form-group">
+                <label class="sr-only">Message</label>
+                <textarea rows="5" class="form-control" placeholder="Message"></textarea>
+              </div>
+              <button type="button" class="btn btn-primary">Send message</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </form>
+          </div>
+        </div> <!-- / .modal-content -->
+      </div> <!-- / .moda-dialog -->
+    </div> <!-- / .modal -->
+
+
+    <!-- FOOTER 
+    ================================================== -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            
+            <div class="footer__col">
+              <h3 class="footer__header">Our Company</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, corrupti debitis!
+              </p>
+              <p>
+                US & CAN: 1-234-56789 <br />
+                Worldwide: 1-234-56789
+              </p>
+              <ul class="footer__social">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+              </ul>
+            </div>
+
+          </div>          
+          <div class="col-xs-6 col-sm-2">
+            
+            <div class="footer__col">
+              <h3 class="footer__header">
+                Learn More
+              </h3>
+              <ul class="footer__content">
+                <li><a href="#">How it works?</a></li>
+                <li><a href="#">Meeting Tools</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-xs-6 col-sm-2">
+            
+            <div class="footer__col">
+              <h3 class="footer__header">
+                About Us
+              </h3>
+              <ul class="footer__content">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            
+            <div class="footer__col">
+              <h3 class="footer__header">Subscribe</h3>
+              <p>
+                Enter your e-mail below to subscribe to our free newsletter.
+              </p>
+              <p>
+                No spam. We promise.
+              </p>
+              <form class="form-inline footer__form">
+                <div class="form-group">
+                  <label class="sr-only">Enter e-mail</label>
+                  <input type="email" class="form-control" placeholder="Enter your e-mail">
+                </div>
+                <button type="submit" class="btn btn-default">
+                  OK
+                </button>
+              </form>
+            </div>
+
+          </div>
+
+        </div> <!-- / .row -->
+
+        <hr class="footer__hr" />
+
+        <div class="row">
+          <div class="col-sm-6">
+            
+            <p>
+              Company 2016. All rights reserved.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+
+      </div> <!-- / .container -->
+    </footer>
+
+
+    <!-- JavaScript
+    ================================================== -->
+    
+    <!-- JS Global -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- JS Plugins -->
+    <script src="assets/plugins/scrolltopcontrol/scrolltopcontrol.js"></script>
+    
+    <!-- JS Custom -->
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
